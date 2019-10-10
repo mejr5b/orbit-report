@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Satellite } from './satellite';
 
-let sourceList: [string, string, string, string, boolean];
+let sourceList: Satellite[];
 
 @Component({
   selector: 'app-root',
@@ -18,7 +18,7 @@ export class AppComponent {
       new Satellite("Weber Grill", "Space Debris", "1996-03-25", "HIGH", false),
       new Satellite("GPS 938", "Positioning", "2001-11-01", "HIGH", true),
       new Satellite("ISS", "Space Station", "1998-11-20", "LOW", true),
-    ]
+    ];
   }
 }
 
