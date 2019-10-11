@@ -7,8 +7,21 @@ import { Satellite } from '../satellite';
   styleUrls: ['./orbit-list.component.css']
 })
 export class OrbitListComponent implements OnInit {
+changeColor: boolean = true;
+sort(column: string): void {
+  // array.sort modifies the array, sorting the items based on the given compare function
+  this.satellites.sort(function(a: Satellite, b: Satellite): number {
+    if(a[column] < b[column]) {
+      return -1;
+    } else if (a[column] > b[column]) {
+      return 1;
+    }
+    return 0;
+   });
+ }
 @Input() satellites: Satellite[];
-  constructor() { }
+  
+constructor() { }
 
   ngOnInit() {
   }
