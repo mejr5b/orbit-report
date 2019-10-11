@@ -9,7 +9,7 @@
    </tr>
    <tr *ngFor="let sat of satellites">
       <td>{{sat.name}}</td>
-      <td [class.warning]="changeColor">{{sat.type}}</td>
+      <td [class.warning]=changeColor>{{sat.type}}</td>
       <td>{{sat.operational}}</td>
       <td>{{sat.orbitType}}</td>
       <td>{{sat.launchDate}}</td>

@@ -7,7 +7,8 @@ import { Satellite } from '../satellite';
   styleUrls: ['./orbit-list.component.css']
 })
 export class OrbitListComponent implements OnInit {
-changeColor: boolean = true;
+  satelliteType: string = "Space Debris";
+  changeColor: boolean = true;
 sort(column: string): void {
   // array.sort modifies the array, sorting the items based on the given compare function
   this.satellites.sort(function(a: Satellite, b: Satellite): number {
