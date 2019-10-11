@@ -7,6 +7,7 @@
       <th>Orbit Type</th>
       <th>Launch Date</th>
    </tr>
+   <div id="tableInfo">
    <td>
    <tr *ngFor="let satellite of satellites">{{satellite.name}}</tr>
    </td> 
@@ -22,6 +23,7 @@
    <td>
    <tr *ngFor="let satellite of satellites">{{satellite.launchDate}}</tr>
    </td>
+   </div>
 
 </table>
 
