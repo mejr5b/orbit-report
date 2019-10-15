@@ -3,8 +3,7 @@
 
 
 <div class="search-form">
-<input (keyup.enter)="searchTerm = searchTerm(searchTerm.value)" type="text"/>
-<button (click)= searchTerm(searchTerm.value)>Search</button>
+<input (keyup.enter)="search(searchTerm.value)" type="text">
+<button (click)= "search(searchTerm.value)" type="submit">Search</button>
 </div>
-
 
